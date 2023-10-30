@@ -36,18 +36,19 @@ export default function Home() {
 						Sign In
 					</Button><br></br>
 					<Text className='text-left ml-32'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text><br></br>
-					<Text className='text-left ml-32'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
+						<br></br><br></br><br></br><br></br><br></br><br></br>
+					<Text className='text-left ml-32 text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
 							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br><br></br><br></br><br></br>
-					<Text className='text-left ml-32'>Don't have an account?
+					<Text className='text-left ml-32 text-sm'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
-						</Text><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+						</Text><br></br><br></br>
 				</Flex>
 			</Container>
 			</div>
 			<div>
 			<Container className='relative'>
 				<Flex className='flex-col flex-1'>
-					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 left-0'>
+					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 -left-64'>
 						<Image
 							src="/computer.png"
 							width={5000}
@@ -59,7 +60,7 @@ export default function Home() {
 			</Container>
 			</div>
 
-			
+
 		</Grid>
 	);
 }
