@@ -53,15 +53,15 @@ export default function Home() {
 					</Button><br></br>
 					<Text className='text-left'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text>
 						<br></br>
-					<div className='flex flex-col-reverse'>
+					<div className='flex flex-col-reverse align-baseline'>
 					<Text className='text-left text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
-							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br>
-					</div>
-					<div className='flex flex-col-reverse'>
+							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text>
+					</div><br></br>
+					<div className='flex flex-col-reverse place-content-baseline'>
 					<Text className='text-left text-sm'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
-						</Text><br></br>
-					</div>
+					</Text>
+						</div><br></br>
 				</Flex>
 			</Container>
 			</div>
