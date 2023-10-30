@@ -1,32 +1,35 @@
 "use client";
 import { Grid, Container, TextField, Flex, Heading, Text, Button } from '@radix-ui/themes';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
 export default function Home() {
-	const [isClient, setIsClient] = useState(false);
 
-	useEffect(() => {
-		setIsClient(true);
-	}, []);
+	const [containerHeight, setContainerHeight] = useState('h-full');
+	useLayoutEffect(() => {
+		const handleResize = () => {
+			const screenHeight = window.innerHeight;
+			const contentHeight = document.documentElement.scrollHeight;
+			
+			if (contentHeight > screenHeight) {
+				setContainerHeight('h-full');
+			} else {
+				setContainerHeight('h-screen');
+			}
+		};
+		window.addEventListener('resize', handleResize);
 
-	const [containerHeight, setContainerHeight] = useState('h-screen');
+		handleResize();
 
-	useEffect(() => {
-		const screenHeight = window.innerHeight;
-		const contentHeight = document.documentElement.scrollHeight;
-
-		if (contentHeight < screenHeight) {
-			setContainerHeight('h-screen');
-		} else {
-			setContainerHeight('h-full');
-		}
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
 	}, []);
 
 	return (
-		<Grid className={'grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)] ${containerHeight}'}>
+		<Grid className={`grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)]`}>
 			<div>
-			<Container className='bg-slate-100 rounded-r-[30px]'>
+				<Container className={`bg-slate-100 rounded-r-[30px] ${containerHeight}`}>
 				<Flex className='flex-col flex-1 ml-16 sm:ml-32'>
 						<br></br><br></br>
 					<Heading className='text-left'>
