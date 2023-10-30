@@ -47,7 +47,7 @@ export default function Home() {
 			<div>
 			<Container className='relative'>
 				<Flex className='flex-col flex-1'>
-					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 left-0 w-1/2'>
+					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 left-0'>
 						<Image
 							src="/computer.png"
 							width={5000}
