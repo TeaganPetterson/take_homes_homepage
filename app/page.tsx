@@ -23,7 +23,7 @@ export default function Home() {
 								height={250}
 								alt="logo"
 							/>
-					</Heading><br></br>
+					</Heading><br></br><br></br><br></br><br></br>
 					<Heading className='text-left ml-32 mt-8 text-5xl font-bold'>Welcome Back</Heading>
 					<Heading className='text-left ml-32 mt-16 text-2xl'>Sign in to your Account</Heading>
 					<Text className='pt-48 text-left ml-32 text-xs'>Email</Text><br></br>
@@ -37,7 +37,7 @@ export default function Home() {
 					</Button><br></br>
 					<Text className='text-left ml-32'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text><br></br>
 					<Text className='text-left ml-32'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
-							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br><br></br><br></br><br></br>
 					<Text className='text-left ml-32'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
 						</Text><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
