@@ -36,12 +36,14 @@ export default function Home() {
 						Sign In
 					</Button><br></br>
 					<Text className='text-left'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text>
-						<br></br><br></br><br></br>
+						<br></br>
 					<Text className='text-left text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
 							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br>
+					<div className='justify-end items-end'>
 					<Text className='text-left text-sm bottom-1/6'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
-						</Text><br></br><br></br>
+						</Text><br></br>
+					</div>
 				</Flex>
 			</Container>
 			</div>
