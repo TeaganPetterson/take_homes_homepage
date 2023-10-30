@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<Grid className='grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)]'>
 			<div>
-				<Container className='bg-slate-100 rounded-r-[30px]'>
+			<Container className='bg-slate-100 rounded-r-[30px] h-screen'>
 				<Flex className='flex-col flex-1 ml-32 sm:ml-16 xs:ml-8'>
 						<br></br><br></br>
 					<Heading className='text-left'>
@@ -23,7 +23,7 @@ export default function Home() {
 								height={250}
 								alt="logo"
 							/>
-					</Heading><br></br><br></br><br></br><br></br>
+					</Heading><br></br>
 					<Heading className='text-left mt-8 text-5xl font-semi-bold'>Welcome Back</Heading>
 					<Heading className='text-left mt-16 text-2xl'>Sign in to your Account</Heading><br></br>
 					<Text className='pt-48 text-left text-xs'>Email</Text><br></br>
@@ -38,8 +38,8 @@ export default function Home() {
 					<Text className='text-left'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text>
 						<br></br><br></br><br></br>
 					<Text className='text-left text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
-							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-					<Text className='text-left text-sm'>Don't have an account?
+							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br>
+					<Text className='text-left text-sm bottom-1/6'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
 						</Text><br></br><br></br>
 				</Flex>
