@@ -14,9 +14,9 @@ export default function Home() {
 		<Grid className='grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)]'>
 			<div>
 				<Container className='bg-slate-100 rounded-r-[30px]'>
-				<Flex className='flex-col flex-1'>
+				<Flex className='flex-col flex-1 ml-32 sm:ml-16 xs:ml-8'>
 						<br></br><br></br>
-					<Heading className='text-left ml-32'>
+					<Heading className='text-left'>
 							<Image
 								src="/logo.svg"
 								width={250}
@@ -24,22 +24,22 @@ export default function Home() {
 								alt="logo"
 							/>
 					</Heading><br></br><br></br><br></br><br></br>
-					<Heading className='text-left ml-32 mt-8 text-5xl font-semi-bold'>Welcome Back</Heading>
-					<Heading className='text-left ml-32 mt-16 text-2xl'>Sign in to your Account</Heading><br></br>
-					<Text className='pt-48 text-left ml-32 text-xs'>Email</Text><br></br>
-					<TextField.Input type="text" className="w-1/2 rounded-md p-2 ml-32 outline outline-1 outline-slate-300">
+					<Heading className='text-left mt-8 text-5xl font-semi-bold'>Welcome Back</Heading>
+					<Heading className='text-left mt-16 text-2xl'>Sign in to your Account</Heading><br></br>
+					<Text className='pt-48 text-left text-xs'>Email</Text><br></br>
+					<TextField.Input type="text" className="w-1/2 rounded-md p-2 outline outline-1 outline-slate-300">
 					</TextField.Input><br></br>
-					<Text className='pt-48 text-left ml-32 text-xs'>Password</Text><br></br>
-					<TextField.Input className="w-1/2 rounded-md p-2 ml-32 outline outline-1 outline-slate-300">
+					<Text className='pt-48 text-left text-xs'>Password</Text><br></br>
+					<TextField.Input className="w-1/2 rounded-md p-2 outline outline-1 outline-slate-300">
 					</TextField.Input><br></br>
-					<Button className='w-1/2 pt-4 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-semibold py-2 px-4 rounded-lg mt-4 ml-32'>
+					<Button className='w-1/2 pt-4 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-semibold py-2 px-4 rounded-lg mt-4 '>
 						Sign In
 					</Button><br></br>
-					<Text className='text-left ml-32'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text>
+					<Text className='text-left'><a href="#" className='text-slate-500 hover:underline text-xs'>Forgot your password?</a></Text>
 						<br></br><br></br><br></br>
-					<Text className='text-left ml-32 text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
+					<Text className='text-left text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
 							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-					<Text className='text-left ml-32 text-sm'>Don't have an account?
+					<Text className='text-left text-sm'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
 						</Text><br></br><br></br>
 				</Flex>
@@ -48,7 +48,7 @@ export default function Home() {
 			<div>
 			<Container className='relative'>
 				<Flex className='flex-col flex-1'>
-					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 -left-64'>
+					<div className='h-screen w-full flex flex-col text-center place-content-center image-center h-screen absolute inset-y-0 -left-1/3'>
 						<Image
 							src="/computer.png"
 							width={5000}
