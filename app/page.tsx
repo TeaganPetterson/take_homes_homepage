@@ -10,11 +10,24 @@ export default function Home() {
 		setIsClient(true);
 	}, []);
 
+	const [containerHeight, setContainerHeight] = useState('h-screen');
+
+	useEffect(() => {
+		const screenHeight = window.innerHeight;
+		const contentHeight = document.documentElement.scrollHeight;
+
+		if (contentHeight < screenHeight) {
+			setContainerHeight('h-screen');
+		} else {
+			setContainerHeight('h-full');
+		}
+	}, []);
+
 	return (
-		<Grid className='grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)]'>
+		<Grid className={'grid grid-cols-2 drop-shadow-[0_5px_55px_rgba(0,0,0,0.5)] ${containerHeight}'}>
 			<div>
-			<Container className='bg-slate-100 rounded-r-[30px] h-screen'>
-				<Flex className='flex-col flex-1 ml-32 sm:ml-16 xs:ml-8'>
+			<Container className='bg-slate-100 rounded-r-[30px]'>
+				<Flex className='flex-col flex-1 ml-16 sm:ml-32'>
 						<br></br><br></br>
 					<Heading className='text-left'>
 							<Image
@@ -41,7 +54,7 @@ export default function Home() {
 					<Text className='text-left text-sm'>By signing in, you agree to the <a href="#" className='text-orange-700 hover:underline'> Terms of Service</a> and 
 							<a href="#" className='text-orange-700 hover:underline'> Privacy Policy</a>.</Text><br></br>
 					</div>
-					<div className='flex flex-col-reverse mt-auto'>
+					<div className='flex flex-col-reverse'>
 					<Text className='text-left text-sm'>Don't have an account?
 						<a href="#" className='text-orange-700 hover:underline'> Sign up</a>.
 						</Text><br></br>
